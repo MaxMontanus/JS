@@ -4,24 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kleuren</title>
     <link rel="stylesheet" href="style.css">
+    <title>Seizoenen</title>
 </head>
 <body>
-    <table id="table">
-    </table>
-    <script>
-        var table = document.getElementById("table");
-        for(var i = 1; i <=100; i++){
-            var row = document.createElement("tr");
-            for(var j = 1; j <=100; j++){
-                var tableData = document.createElement("td");
-                tableData.innerHTML = i * j;
-                tableData.style.backgroundColor = "rgb("+ j*2.5+", 100," +i*2.5 +")";
-                row.appendChild(tableData);
-            }
-            table.appendChild(row);
-        }
-    </script>
+    <div id="container">
+        <h2 id="myTitle"></h2>
+        <img id="myImage" src="img/seasons.jpg" alt="foto van 4 verschillende Seizoenen">
+        <nav>
+            <button onclick="show(0)">Seizoenen</button>
+            <button onclick="show(1)">Lente</button>
+            <button onclick="show(2)">Zomer</button>
+            <button onclick="show(3)">Herfst</button>
+            <button onclick="show(4)">Winter</button>
+        </nav>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

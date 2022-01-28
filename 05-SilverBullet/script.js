@@ -53,7 +53,7 @@ let lokaties =[
     }
 ]
 
-//Mytitle.innerHTML = "dit is door het script toegevoegd";
+//Mytitle.innerHTML = "dit is door het script toegevoed";
 //Myimage.src = "img/1.jpg";
 
 function show(index){
